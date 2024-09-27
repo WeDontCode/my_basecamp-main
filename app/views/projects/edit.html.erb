@@ -1,0 +1,14 @@
+<% content_for :title, "Editing Project" %>
+
+<div class="container mt-4">
+  </br>
+
+  <!-- Render the form partial with Bootstrap styling -->
+  <%= render "form", project: @project %>
+
+  <div class="mt-4">
+    <!-- Links styled as Bootstrap buttons -->
+    <%= link_to "Show this project", @project, class: "btn btn-info btn-sm" %>
+    <%= link_to "Back to projects", projects_path, class: "btn btn-secondary btn-sm" %>
+  </div>
+</div>

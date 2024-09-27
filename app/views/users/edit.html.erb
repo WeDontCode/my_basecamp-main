@@ -1,0 +1,14 @@
+<% content_for :title, "Editing User" %>
+
+<div class="container mt-4">
+  <h1 class="mb-4">Editing User</h1>
+
+  <!-- Render the form partial with Bootstrap styling -->
+  <%= render "form", user: @user %>
+
+  <div class="mt-4">
+    <!-- Links styled as Bootstrap buttons -->
+    <%= link_to "Show this user", @user, class: "btn btn-info btn-sm" %>
+    <%= link_to "Back to users", users_path, class: "btn btn-secondary btn-sm" %>
+  </div>
+</div>

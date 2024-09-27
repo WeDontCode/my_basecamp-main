@@ -1,0 +1,15 @@
+
+<div class="container mt-4">
+  <!-- Render user details using a partial -->
+  <%= render @user %>
+
+  <div class="mt-4">
+    <!-- Edit link styled as a Bootstrap button -->
+    <%= link_to "Edit this user", edit_user_path(@user), class: "btn btn-warning btn-sm" %>
+    <!-- Back link styled as a Bootstrap button -->
+    <%= link_to "Back to users", users_path, class: "btn btn-secondary btn-sm" %>
+
+    <!-- Destroy button styled as a Bootstrap button -->
+    <%= button_to "Destroy this user", @user, method: :delete, data: { confirm: "Are you sure?" }, class: "btn btn-danger btn-sm mt-2" %>
+  </div>
+</div>
